@@ -1,0 +1,63 @@
+:root {
+    --accent-orange: #f38a00;
+    --dark-bg: #000000;
+    --card-bg: #111111;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* --- Nav & Top Bar --- */
+.top-bar { background: #000; font-size: 0.7rem; border-bottom: 1px solid #222; color: #fff; }
+.navbar { background-color: rgba(0,0,0,0.95) !important; backdrop-filter: blur(10px); }
+.brand-text { color: var(--accent-orange); font-weight: 900; letter-spacing: 2px; }
+.nav-link { color: #fff !important; font-size: 0.8rem; font-weight: 600; margin: 0 10px; }
+.nav-link:hover { color: var(--accent-orange) !important; }
+
+.search-pill { background: #fff; border-radius: 50px; padding: 5px 15px; display: flex; align-items: center; }
+.search-pill input { border: none; outline: none; width: 150px; font-size: 0.8rem; margin-left: 8px; }
+
+/* --- Hero --- */
+.hero-section {
+    padding: 100px 0; background: radial-gradient(circle at 70%, #1a1a1a, #000);
+    min-height: 85vh; display: flex; align-items: center;
+}
+.hero-title { font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 900; line-height: 0.85; margin-bottom: 25px; }
+.btn-orange-pill {
+    background: var(--accent-orange); color: #000; border-radius: 50px; padding: 15px 40px;
+    font-weight: 900; text-transform: uppercase; text-decoration: none; display: inline-block; transition: 0.3s;
+}
+.btn-orange-pill:hover { background: #fff; transform: scale(1.05); color: #000; }
+
+/* --- Product Cards --- */
+.product-box {
+    background: var(--card-bg); border: 1px solid #222; border-radius: 15px;
+    overflow: hidden; position: relative; transition: 0.4s; height: 100%;
+}
+.product-box:hover { border-color: var(--accent-orange); transform: translateY(-10px); }
+.product-box img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.badge-new {
+    position: absolute; top: 15px; left: 15px; background: #fff; color: #000;
+    font-size: 0.6rem; font-weight: 900; padding: 5px 12px; border-radius: 50px;
+}
+.text-orange { color: var(--accent-orange); }
+
+/* --- Custom Sections --- */
+.bg-card-custom { background: #080808; border-top: 1px solid #151515; border-bottom: 1px solid #151515; }
+.fw-black { font-weight: 900; }
+
+/* --- Testimonials --- */
+.testimonial-card { background: #111; border: 1px solid #222; border-radius: 20px; transition: 0.3s; }
+.testimonial-card:hover { border-color: var(--accent-orange); }
+
+/* --- CTA Section --- */
+.cta-box { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
+.newsletter-input {
+    background: #000; border: 1px solid #333; color: #fff; border-radius: 50px;
+    max-width: 300px; padding: 12px 20px;
+}
+.newsletter-input:focus { background: #111; border-color: var(--accent-orange); color: #fff; box-shadow: none; }
